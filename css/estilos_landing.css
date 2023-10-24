@@ -128,7 +128,7 @@ body{
     width: 100%;
     max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     place-items: center;
     justify-content: space-between;
     order: 2;
@@ -136,20 +136,16 @@ body{
 }
 
 .titulo_footer{
-    color: #ffffff;
     font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
     letter-spacing: 0em;
     text-align: left;
-    
+    background: -webkit-linear-gradient( 90deg,#3A8636 0%, #E0FF22 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
 }
-.titulo_footer::before{
-    background: linear-gradient(90deg, #3A8636 0%, #E0FF22 100%);
-
-}
-
 
 .footer .grupo-2 .box-1{
     margin-right: 50px;  
@@ -168,32 +164,83 @@ body{
     width: 250px;
 }
 
-.footer .grupo-2 .box-1 p, .box-3 p{
-    color: #FFFFFF;
+.footer .grupo-2 .box-3 h1{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;    
+}
+
+.footer .grupo-2 .box-1 p{
+    color:  #969696;
     margin-top: 15px;
     font-family: 'Poppins';
     font-style: normal;
     font-size: 14px;
     line-height: 21px;
-    text-align: justify;
 }
 
 .footer .grupo-2 .box-3 {
-    justify-items: end;
     display: grid;
     margin-left: auto;
     order: 3;
     font-weight: bolder;
 }
 
-.footer .grupo-2 .box-2 {
-    order: 2;
-}
-
 .redes_sociales_footer {
     text-decoration: none;
     gap: 30px;
     display: flex;
-    float: left;
     margin: 30px 0px;
+    order: 2;
+}
+
+.information{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #D9D9D9;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+
+    .footer .grupo-2{
+        width: 90%;
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 45px;
+        padding: 45px 0px;
+    }
+
+    .footer .grupo-2 .box-1, .box-3{
+        margin-left: 30px;
+        margin-right: 0px;  
+    }
+
+    .footer .redes_sociales_footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .grupo-2 .box-3 {   
+        order: 3;
+        justify-items: initial;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 30px;
+        width: 100%;
+      }
+
+    .information{
+        flex-direction: column;
+        gap: 50px;
+    }
 }
