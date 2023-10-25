@@ -24,7 +24,9 @@ body{
 }
 
 .titulo{
-    color: linear-gradient(90deg, #3A8636 0%, #E0FF22 100%);
+    background: -webkit-linear-gradient( 90deg,#3A8636 0%, #E0FF22 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
     font-family: Poppins;
     font-size: 99px;
     font-weight: 700;
@@ -52,7 +54,7 @@ body{
 
 }
 
-.about-me{
+.about-me, .graldark{
     margin-left: 100px;
 }
 
@@ -91,7 +93,7 @@ body{
 
 .text-about-me{
     background: #23311160;
-    width: 787px;
+    width: 70%;
     height: 370px;
     border-radius: 15px;
     display: grid;
@@ -139,11 +141,8 @@ body{
 .graldark{
     position: absolute;
     margin-top: 200px;
-    width: 100%;
     height: auto;
-  
-    padding: 30px;
-}
+  }
 .graldark .grupo-1 {
     order: 1;
 }
