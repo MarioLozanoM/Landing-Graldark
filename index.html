@@ -89,19 +89,73 @@
 
     <!-- Hall of fame -->
 
-    <div class="container" style=" position: relative; top: 100px">
-      <h1 class="subtitulos">Hall of fame</h1>
-      <p class="descripcion">Legendary contributors and supporters:</p>
-      <div class="grid-flechas">
-        <figure class="fecha_izquierda"><img src="/img/flecha.png" /></figure>
-        <figure class="fecha_derecha"><img src="/img/flecha.png" /></figure>
+    <div class="container clientes" style="position: relative; top: 100px">
+      <div>
+        <h1 class="subtitulos">Hall of fame</h1>
+        <p class="descripcion">Legendary contributors and supporters:</p>
+        <div class="grid-flechas">
+          <div class="swiper-button-prev" id="boton_izquierda_cliente">
+            <figure class="fecha_izquierda">
+              <img src="/img/flecha.png" />
+            </figure>
+          </div>
+          <div class="swiper-button-next" id="boton_derecha_cliente">
+            <figure class="fecha_derecha"><img src="/img/flecha.png" /></figure>
+          </div>
+        </div>
       </div>
-      <!-- <div class="grid-card">
-        <div class="card">ASDASD</div>
-        <div class="card">ASDASD</div>
-        <div class="card">ASDAS</div>
 
-      </div> -->
+      <div class="slider_cont">
+        <div class="swiper3 slider_cliente container_cliente">
+          <div class="swiper-wrapper container_card_cliente">
+            <div class="swiper-slide contenido_clientes">
+              <img src="/img/img-daemonWin.png" class="logos_clientes" />
+              <p class="nombre-cliente">DaemonWin</p>
+              <div class="redes_sociales_cliente">
+                <div class="container-redes-sociales">
+                  <a href="#"><img src="/img/icon-face-white.png" /></a>
+                </div>
+                <div class="container-redes-sociales">
+                  <a href="#"><img src="/img/icon-ig-white.png" /></a>
+                </div>
+                <div class="container-redes-sociales">
+                  <a href="#"><img src="/img/icon-twitch-white.png" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide contenido_clientes">
+              <img src="/img/img-zniko.png" class="logos_clientes" />
+              <p class="nombre-cliente">Zniko</p>
+              <div class="redes_sociales_cliente">
+                <div class="container-redes-sociales">
+                  <a href="#"><img src="/img/icon-face-white.png" /></a>
+                </div>
+                <div class="container-redes-sociales">
+                  <a href="#"><img src="/img/icon-ig-white.png" /></a>
+                </div>
+                <div class="container-redes-sociales">
+                  <a href="#"><img src="/img/icon-twitch-white.png" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide contenido_clientes">
+              <img src="/img/img-emperador.png" class="logos_clientes" />
+              <p class="nombre-cliente">Emperador</p>
+              <div class="redes_sociales_cliente">
+                <div class="container-redes-sociales">
+                  <a href="#"><img src="/img/icon-face-white.png" /></a>
+                </div>
+                <div class="container-redes-sociales">
+                  <a href="#"><img src="/img/icon-ig-white.png" /></a>
+                </div>
+                <div class="container-redes-sociales">
+                  <a href="#"><img src="/img/icon-twitch-white.png" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <img style="position: relative; bottom: -200px" src="/img/figura1.png" />
@@ -145,5 +199,35 @@
         <a href="#"><img src="/img/icon-twitch.png" /></a>
       </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper3 = new Swiper(".slider_cliente", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: "#boton_derecha_cliente",
+          prevEl: "#boton_izquierda_cliente",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          497: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
