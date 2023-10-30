@@ -21,6 +21,8 @@ body{
     display: flex;
     float: right;
     margin: 30px 50px;
+    position: relative;
+  bottom: 70px;
 }
 
 .graldark{
@@ -35,6 +37,7 @@ body{
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    gap: 100px;
 }
 
 .grid-ds{
@@ -66,12 +69,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
 }
 
 
 .join-ds{
     background: linear-gradient(90deg, #2FC759 0%, #D8ED15 100%);
-    width: 60%;
+    width: 70%;
     height: 53px;
     border-radius: 11px;
     font-family: Poppins;
@@ -100,7 +105,7 @@ body{
 
 .grid-container-about-me{
     display: flex;
-    gap: 100px;
+    gap: 20px;
     width: 100%;
     align-items: center;
 }
@@ -115,6 +120,7 @@ body{
     line-height: 75px;
     letter-spacing: 0em;
     text-align: left;
+    margin-bottom: 3rem !important;
 }
 
 .img-graldark{
@@ -221,6 +227,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap:50px;
+    position: relative;
 }
  .grid-flechas{
     display: flex;
@@ -285,6 +293,7 @@ body{
     height: 182px;
     border-radius: 20px;
     background: #D1EB18;
+    margin-top: auto
 }
 
 .nombre-cliente{
@@ -299,7 +308,7 @@ body{
 
 .redes_sociales_cliente {
     text-decoration: none;
-    gap: 30px;
+    gap: 20px;
     display: flex;
     order: 2;
     margin-bottom: 20px;
@@ -316,11 +325,18 @@ body{
 }
 #boton_izquierda_fama,#boton_derecha_fama img{
     cursor: pointer;
-    display: visible;
 }
 
  
 /* Twitch */
+
+.container-tw{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
 .btn-tw{
     background: linear-gradient(90deg, #2FC759 0%, #D8ED15 100%);
     width: 175px;
@@ -342,7 +358,7 @@ body{
     border-radius: 60px;
     border: 1px solid #60FC0F;
     background: linear-gradient(0deg, #60fc0f1a 0%, #d1eb181a 100%);
-    width: 100%;
+    width: 80%;
     height: 315px;
     display: grid;
     place-items: center;
@@ -474,6 +490,10 @@ body{
 
 @media screen and (min-width: 0) and (max-width: 767px) {
 
+    .titulo{
+        font-size: 80px;
+    }
+
     .grid-container-about-me, .grid-container-join-ds{
         flex-direction: column;
     }
@@ -483,6 +503,7 @@ body{
 
     .join-tw{
         height: 100%;
+        width: 100%;
     }
 
     .logo-graldark{
