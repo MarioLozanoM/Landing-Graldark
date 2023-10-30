@@ -2,14 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Estilo css-->
+    <title>Graldark</title>
+
+    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
-      type="text/css"
-      href="css/estilos_landing.css"
-      media="screen"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+
+    <!-- link file css -->
+    <link rel="stylesheet" href="css/estilos_landing.css" />
 
     <!-- fonts Poppins -->
     <link
@@ -21,7 +25,6 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <title>Graldark</title>
   </head>
   <body>
     <div class="redes_sociales_header">
@@ -29,7 +32,7 @@
       <a href="#"><img src="/img/icon-ig.png" /></a>
       <a href="#"><img src="/img/icon-twitch.png" /></a>
     </div>
-    <img style="position: relative; top: 0px" src="/img/figura1.png" />
+    <!-- <img style="position: relative; top: 0px" src="/img/figura1.png" />
 
     <img
       style="
@@ -40,10 +43,10 @@
         opacity: 0.5;
       "
       src="/img/figura2.png"
-    />
+    /> -->
 
     <!-- Discord -->
-    <div class="container graldark" style="position: relative; top: -800px">
+    <div class="container graldark" >
       <div class="grid-container-join-ds">
         <div class="grid-ds">
           <h1 class="titulo">Graldark</h1>
@@ -58,7 +61,6 @@
         <img class="logo-graldark" src="/img/logo-Graldark.png" />
       </div>
     </div>
-
     <!-- About me -->
     <div class="container about-me">
       <h1 class="subtitulos">About me</h1>
@@ -87,27 +89,71 @@
       </div>
     </div>
 
+    <div class="container">
+      <h1 class="subtitulos">Hobbies</h1>
+      <div class="hobbie">
+        <div id="boton_izquierda_hobbie">
+          <figure class="fecha_izquierda">
+            <img src="/img/flecha_izquierda_hobbie.png" />
+          </figure>
+        </div>
+        <div class="swiper slider-hobbie">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide contenido-hobbie">
+              <img src="/img/streaming.png" alt="streaming" />
+              <p>Streaming</p>
+            </div>
+            <div class="swiper-slide contenido-hobbie">
+              <img src=" /img/paisaje.png" alt="paisaje" />
+              <p>Paisaje</p>
+            </div>
+            <div class="swiper-slide contenido-hobbie">
+              <img src="/img/futbol.png" alt="futbol" />
+              <p>hola3</p>
+            </div>
+            <div class="swiper-slide contenido-hobbie">
+              <img src="/img/streaming.png" alt="streaming" />
+              <p>hola4</p>
+            </div>
+            <div class="swiper-slide contenido-hobbie">
+              <img src="/img/paisaje.png" alt="paisaje" />
+              <p>hola5</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="boton_derecha_hobbie">
+          <figure class="fecha_derecha">
+            <img src="/img/flecha_derecha_hobbie.png" />
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!-- <img style="position: relative; float:right ;" src="/img/figura1.png" /> -->
+
     <!-- Hall of fame -->
 
-    <div class="container clientes" style="position: relative; top: 100px">
+    <div class="container fame">
       <div>
         <h1 class="subtitulos">Hall of fame</h1>
         <p class="descripcion">Legendary contributors and supporters:</p>
         <div class="grid-flechas">
-          <div class="swiper-button-prev" id="boton_izquierda_cliente">
-            <figure class="fecha_izquierda">
+          <div id="boton_izquierda_fama">
+            <figure class="fecha_izquierda_fama">
               <img src="/img/flecha.png" />
             </figure>
           </div>
-          <div class="swiper-button-next" id="boton_derecha_cliente">
-            <figure class="fecha_derecha"><img src="/img/flecha.png" /></figure>
+          <div id="boton_derecha_fama">
+            <figure class="fecha_derecha_fama">
+              <img src="/img/flecha.png" />
+            </figure>
           </div>
         </div>
       </div>
 
       <div class="slider_cont">
-        <div class="swiper3 slider_cliente container_cliente">
-          <div class="swiper-wrapper container_card_cliente">
+        <div class="swiper2 slider_fame container_fame">
+          <div class="swiper-wrapper container_card_fame">
             <div class="swiper-slide contenido_clientes">
               <img src="/img/img-daemonWin.png" class="logos_clientes" />
               <p class="nombre-cliente">DaemonWin</p>
@@ -153,12 +199,27 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-slide contenido_clientes">
+              <img src="/img/img-zniko.png" class="logos_clientes" />
+              <p class="nombre-cliente">Zniko</p>
+              <div class="redes_sociales_cliente">
+                <div class="container-redes-sociales">
+                  <a href="#"><img src="/img/icon-face-white.png" /></a>
+                </div>
+                <div class="container-redes-sociales">
+                  <a href="#"><img src="/img/icon-ig-white.png" /></a>
+                </div>
+                <div class="container-redes-sociales">
+                  <a href="#"><img src="/img/icon-twitch-white.png" /></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <img style="position: relative; bottom: -200px" src="/img/figura1.png" />
+    <!-- <img style="position: relative; bottom: -200px" src="/img/figura1.png" /> -->
 
     <!-- Join me on Twitch! -->
     <div class="container join-tw">
@@ -199,19 +260,35 @@
         <a href="#"><img src="/img/icon-twitch.png" /></a>
       </div>
     </footer>
-
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper3 = new Swiper(".slider_cliente", {
+      var swiper = new Swiper(".slider-hobbie", {
+        effect: "coverflow",
+        grabCursor: true,
+        navigation: {
+          nextEl: "#boton_derecha_hobbie",
+          prevEl: "#boton_izquierda_hobbie",
+        },
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 15,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: false,
+        },
+      });
+
+      var swiper2 = new Swiper(".slider_fame", {
         slidesPerView: 3,
         spaceBetween: 20,
-        loop: true,
         navigation: {
-          nextEl: "#boton_derecha_cliente",
-          prevEl: "#boton_izquierda_cliente",
+          nextEl: "#boton_derecha_fama",
+          prevEl: "#boton_izquierda_fama",
         },
         breakpoints: {
           0: {
