@@ -2,50 +2,80 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: red solid 1px; */
 }
 
 body{
     background-color: #121C11;
 }
+
 .container {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
-.figura1-header{
+
+.description{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #969696;
+}
+
+.section-titles{
+    background: -webkit-linear-gradient( 90deg,#D9D9D9 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 3rem !important;
+}
+
+/* Header */
+
+.social-networks-header {
+    display: flex;
+    float: right;
+    margin: 30px 50px;
+    position: relative;
+    bottom: 70px;
+    z-index: 1;
+    text-decoration: none;
+    gap: 30px;
+}
+
+/* Figure */
+
+.figure1-header{
     position: absolute; 
     top: 0px; 
     width: auto;
 }
 
-.figura2{
+.figure2{
     display: flex;
     position: absolute;
     top: 100px;
     right: 5px;
     opacity: 0.5;
 }
-.figura2 img{
+.figure2 img{
     width: auto;
 }
 
- .redes_sociales_header {
-    text-decoration: none;
-    gap: 30px;
-    display: flex;
-    float: right;
-    margin: 30px 50px;
-    position: relative;
-  bottom: 70px;
-}
+/* Discord */
 
 .graldark{
-position: relative;
+    position: relative;
     margin-top: 5rem !important;
 }
-
 
 .grid-container-join-ds{
     display: flex;
@@ -59,25 +89,16 @@ position: relative;
     width: min-content;
 }
 
-.titulo{
+.title-ds{
     background: -webkit-linear-gradient( 90deg,#3A8636 0%, #E0FF22 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;       font-family: Poppins;
+    -webkit-text-fill-color: transparent;       
+    font-family: Poppins;
     font-size: 99px;
     font-weight: 700;
     line-height: 149px;
     letter-spacing: 0em;
     text-align: left;
-}
-
-.descripcion{
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #969696;
 }
 
 .btn-ds{
@@ -88,8 +109,7 @@ position: relative;
     position: relative;
 }
 
-
-.join-ds{
+.btn-ds a{
     background: linear-gradient(90deg, #2FC759 0%, #D8ED15 100%);
     width: 70%;
     height: 53px;
@@ -106,9 +126,10 @@ position: relative;
     color: #000000;
 }
 
-.logo-Graldark{
+.logo-graldark{
     width: 100%;
 }
+
 /* About me */
 
 .about-me{
@@ -121,19 +142,6 @@ position: relative;
     gap: 20px;
     width: 100%;
     align-items: center;
-}
-
-.subtitulos{
-    background: -webkit-linear-gradient( 90deg,#D9D9D9 0%, #FFFFFF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Poppins;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 75px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-bottom: 3rem !important;
 }
 
 .img-graldark{
@@ -171,6 +179,7 @@ position: relative;
     scrollbar-color: #3A8636 #3a863652;
     scrollbar-width: thin ;
     overflow-y: auto;
+    z-index: 1;
 }
 
 .text-about-me p{
@@ -182,27 +191,28 @@ position: relative;
 }
 
 /* Hobbie */
+
 .hobbie{
     display: flex;
     place-items: center;  
 }
 
-.slider-hobbie {
+.hobbie-slider {
     width: 100%;
     height: 400px;
 }
 
-.contenido-hobbie {
+.hobbie-content {
     width: 361px;
     border-radius: 50%;
     filter: grayscale(100%)
 }
 
-.contenido-hobbie p{
+.hobbie-content p{
     display: none;
 }
 
-.contenido-hobbie img {
+.hobbie-content img {
     display: block;
     width: 361px;
     height: 361px;
@@ -229,43 +239,42 @@ position: relative;
     margin: 0%;
     place-items: center;
 }
-#boton_izquierda_hobbie,#boton_derecha_hobbie img{
+
+.right-arrow{
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
     cursor: pointer;
 }
 
-.flecha_derecha{
-    margin-left: revert;
+.left-arrow{
+    margin-right: 20px;
     position: relative;
     z-index: 1;
+    cursor: pointer;
 }
 
-.flecha_izquierda{
-    margin-right: revert;
-    position: relative;
-    z-index: 1;
-}
-  
-
-/* Hall of fame */
-
-.figura1-derecha{
+/* Figures */
+.right-figure1{
     position: absolute; 
     right: 5px; 
     top: 1300px;
     display: flex;
 }
-.figura1-derecha img{
+.right-figure1 img{
     width: auto;
 }
 
-.figura1{
+.figure1{
     position: absolute; 
     top: 2150px;
 }
 
-.figura1 img{
+.figure1 img{
     width: auto;
 }
+
+/* Hall of fame */
 
 .fame{
     margin-top: 5rem !important;
@@ -275,31 +284,33 @@ position: relative;
     gap:50px;
     position: relative;
 }
- .grid-flechas{
+ .grid-arrows{
     display: flex;
     flex-direction: row; 
     gap: 20px; 
     margin-top: 50px;
 }
 
-.flecha_izquierda_fama{
+.left-arrow-fame{
     background-color: #60FC0F; 
     width: 50px;
     height: 50px; 
     display: grid; 
     place-items: center;
+    cursor: pointer;
 }
 
-.flecha_derecha_fama{
+.right-arrow-fame{
     background-color: #60FC0F; 
     width: 50px;
     height: 50px; 
     display: grid; 
     place-items: center;
     transform: scaleX(-1);
+    cursor: pointer;
 }
 
-.container_fame{
+.fame-container{
     display: flex;
     align-content: center;
     text-align: center;
@@ -307,11 +318,12 @@ position: relative;
     margin-top: 3rem !important;
     overflow: hidden;
 }
+
 .slider_cont{
     align-items: center; 
 }
 
-.container_card_fame{
+.fame_card_container{
     display: flex;
 } 
 
@@ -321,7 +333,7 @@ position: relative;
     margin-right: auto;
 }
 
- .contenido_clientes{
+ .fame-content{
     background: linear-gradient(0deg, rgba(96, 252, 15, 0.5) 0%, rgba(209, 235, 24, 0.5) 100%);
     border-radius: 18px;
     flex-shrink:0;
@@ -333,7 +345,7 @@ position: relative;
 
 } 
 
-.logos_clientes{
+.fame-content > img{
     width: 178px;
     height: 182px;
     border-radius: 20px;
@@ -341,7 +353,7 @@ position: relative;
     margin-top: auto
 }
 
-.nombre-cliente{
+.fame-content > p{
     font-family: Poppins;
     font-size: 16px;
     font-weight: 700;
@@ -351,7 +363,7 @@ position: relative;
     color: #FFFFFF;
 }
 
-.redes_sociales_cliente {
+.social-networks-fame {
     text-decoration: none;
     gap: 20px;
     display: flex;
@@ -359,8 +371,7 @@ position: relative;
     margin-bottom: 20px;
 }
 
-.container-redes-sociales, .container-redes-sociales a{
-
+.social-networks-container, .social-networks-container a{
     background: linear-gradient(0deg, rgba(96, 252, 15, 0.5) 0%, rgba(209, 235, 24, 0.5) 100%);
     width: 29.18px;
     height: 29.18px;
@@ -368,10 +379,6 @@ position: relative;
     display: grid;
     place-items: center;  
 }
-#boton_izquierda_fama,#boton_derecha_fama img{
-    cursor: pointer;
-}
-
  
 /* Twitch */
 
@@ -380,6 +387,39 @@ position: relative;
     align-content: center;
     text-align: center;
     justify-content: center;
+}
+
+.join-tw{
+    border-radius: 60px;
+    border: 1px solid #60FC0F;
+    background: linear-gradient(0deg, #60fc0f1a 0%, #d1eb181a 100%);
+    width: 80%;
+    height: 315px;
+    display: grid;
+    place-items: center;
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+}
+
+.title-tw{
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.section{
+    color: #969696;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: justify;
+    padding: 0px 50px;
 }
 
 .btn-tw{
@@ -401,41 +441,6 @@ position: relative;
     color: #000000  ;
 }
 
-.join-tw{
-    border-radius: 60px;
-    border: 1px solid #60FC0F;
-    background: linear-gradient(0deg, #60fc0f1a 0%, #d1eb181a 100%);
-    width: 80%;
-    height: 315px;
-    display: grid;
-    place-items: center;
-    margin-top: 5rem !important;
-    margin-bottom: 5rem !important;
-
-}
-
-.titulo2{
-    color: #FFFFFF;
-    font-family: Poppins;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 75px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-
-.parrafo{
-    color: #969696;
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: justify;
-    padding: 0px 50px;
-}
-
-
 /* Footer */
 
 .footer{
@@ -448,7 +453,7 @@ position: relative;
     align-items: center;
     padding: 30px;
 }
-.footer .grupo-2{
+.footer .group-2{
     width: 100%;
     max-width: 1200px;
     display: grid;
@@ -459,7 +464,7 @@ position: relative;
     color: white;
 }
 
-.titulo_footer{
+.title-footer{
     font-family: Poppins;
     font-size: 30px;
     font-weight: 700;
@@ -471,12 +476,12 @@ position: relative;
     -webkit-text-fill-color: transparent;   
 }
 
-.footer .grupo-2 .box-1{
+.footer .group-2 .box-1{
     margin-right: 50px;  
     order: 1;
 }
 
-.footer .grupo-2 .box-1 figure{
+.footer .group-2 .box-1 figure{
     width: 100%;
     height: 50%;
     display: flex;
@@ -484,18 +489,18 @@ position: relative;
     align-items: center;
 }
 
-.footer .grupo-2 .box-1 figure img {
+.footer .group-2 .box-1 figure img {
     width: 250px;
 }
 
-.footer .grupo-2 .box-3 h1{
+.footer .group-2 .box-3 h1{
     font-family: Poppins;
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;    
 }
 
-.footer .grupo-2 .box-1 p{
+.footer .group-2 .box-1 p{
     color:  #969696;
     margin-top: 15px;
     font-family: 'Poppins';
@@ -504,14 +509,14 @@ position: relative;
     line-height: 21px;
 }
 
-.footer .grupo-2 .box-3 {
+.footer .group-2 .box-3 {
     display: grid;
     margin-left: auto;
     order: 3;
     font-weight: bolder;
 }
 
-.redes_sociales_footer {
+.social-networks-footer {
     text-decoration: none;
     gap: 30px;
     display: flex;
@@ -535,39 +540,61 @@ position: relative;
 
 @media screen and (min-width: 0) and (max-width: 767px) {
 
-    .figura1-header img{
+    .figure1-header img{
         width: 100%;
     }
 
-    .figura1{
+    .figure1{
         top: auto;
     }
 
-    .figura2{
+    .figure2{
         display: none;
     }
-    .figura2 img{
+    .figure2 img{
         width: 100%;
     }
     
-    .figura1-derecha img{
+    .right-figure1 img{
         width: 100%;
     }
     
-    .figura1 img{
+    .figure1 img{
         width: 100%;
     }
     
-
-    .titulo{
+    .title-ds{
         font-size: 80px;
     }
 
     .grid-container-about-me, .grid-container-join-ds{
         flex-direction: column;
     }
-    .fame, .hobbie{
+
+    .fame{
         flex-direction: column;
+    }
+
+    .hobbie{
+        display: -webkit-box;
+    }
+
+    .hobbie-slider{
+        margin-bottom: 50px;
+    }
+
+    #left-button-hobbie,#right-button-hobbie img{
+        position: absolute;
+    }
+
+    .left-arrow{
+        margin-left: 100px;
+        margin-top: 450px;
+    }
+
+    .right-arrow{
+        margin-top: 450px;
+        margin-left: -100px;
     }
 
     .join-tw{
@@ -580,7 +607,8 @@ position: relative;
     .logo-graldark{
         width: 70%;
     }
-    .footer .grupo-2{
+
+    .footer .group-2{
         width: 90%;
         margin: 10px;
         grid-template-columns: repeat(1,1fr);
@@ -588,18 +616,18 @@ position: relative;
         padding: 45px 0px;
     }
 
-    .footer .grupo-2 .box-1, .box-3{
+    .footer .group-2 .box-1, .box-3{
         margin-left: 30px;
         margin-right: 0px;  
     }
 
-    .footer .redes_sociales_footer{
+    .footer .social-networks-footer{
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .footer .grupo-2 .box-3 {   
+    .footer .group-2 .box-3 {   
         order: 3;
         justify-items: initial;
         margin-left: auto;
@@ -618,16 +646,20 @@ position: relative;
 }
 
 @media screen and (min-width: 768px) {
+
     .grid-container-join-ds{
         flex-direction: column;
     }
-    .figura1{
+
+    .figure1{
         top: 1900px;
     }
-    .figura1-derecha{
+
+    .right-figure1{
         display: none;
     }
-    .figura2{
+
+    .figure2{
         display: none;
     }
   
@@ -642,6 +674,7 @@ position: relative;
     .img-graldark{
         width: 60%;
     }
+
     .swiper2 {
         width: calc(2* 206px);
     }
@@ -649,32 +682,38 @@ position: relative;
 
 @media screen and (min-width: 992px) {
 
-    .figura2{
+    .figure2{
         display: flex;
     }
-    .figura1-derecha{
+
+    .right-figure1{
         display: flex;
     }
 
     .grid-container-join-ds{
         flex-direction: row;
     }
+
     .logo-graldark{
         width: 40%;
     }
+
     .container {
         width: 970px;
     }
+
     .swiper2 {
         width: calc(3* 206px);
     }
 }
 
 @media screen and (min-width: 1280px) {
-      .figura2{
+    
+    .figure2{
         display: flex;
     }
-    .figura1-derecha{
+    
+    .right-figure1{
         display: flex;
     }
 
