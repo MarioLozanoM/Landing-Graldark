@@ -14,6 +14,11 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
+.figura1-header{
+    position: absolute; 
+    top: 0px; 
+    width: auto;
+}
 
 .figura2{
     display: flex;
@@ -21,6 +26,9 @@ body{
     top: 100px;
     right: 5px;
     opacity: 0.5;
+}
+.figura2 img{
+    width: auto;
 }
 
  .redes_sociales_header {
@@ -104,8 +112,6 @@ position: relative;
 /* About me */
 
 .about-me{
-    /* position: relative;
-    top: -600px; */
     margin-top: 5rem !important;
     margin-bottom: 5rem !important;
 }
@@ -226,6 +232,18 @@ position: relative;
 #boton_izquierda_hobbie,#boton_derecha_hobbie img{
     cursor: pointer;
 }
+
+.flecha_derecha{
+    margin-left: revert;
+    position: relative;
+    z-index: 1;
+}
+
+.flecha_izquierda{
+    margin-right: revert;
+    position: relative;
+    z-index: 1;
+}
   
 
 /* Hall of fame */
@@ -235,12 +253,18 @@ position: relative;
     right: 5px; 
     top: 1300px;
     display: flex;
-
+}
+.figura1-derecha img{
+    width: auto;
 }
 
 .figura1{
     position: absolute; 
     top: 2150px;
+}
+
+.figura1 img{
+    width: auto;
 }
 
 .fame{
@@ -258,7 +282,7 @@ position: relative;
     margin-top: 50px;
 }
 
-.fecha_izquierda_fama{
+.flecha_izquierda_fama{
     background-color: #60FC0F; 
     width: 50px;
     height: 50px; 
@@ -266,7 +290,7 @@ position: relative;
     place-items: center;
 }
 
-.fecha_derecha_fama{
+.flecha_derecha_fama{
     background-color: #60FC0F; 
     width: 50px;
     height: 50px; 
@@ -275,13 +299,13 @@ position: relative;
     transform: scaleX(-1);
 }
 
-
 .container_fame{
     display: flex;
     align-content: center;
     text-align: center;
     justify-content: center;
-    margin-top: 3rem !important;overflow: hidden;
+    margin-top: 3rem !important;
+    overflow: hidden;
 }
 .slider_cont{
     align-items: center; 
@@ -511,6 +535,10 @@ position: relative;
 
 @media screen and (min-width: 0) and (max-width: 767px) {
 
+    .figura1-header img{
+        width: 100%;
+    }
+
     .figura1{
         top: auto;
     }
@@ -518,6 +546,18 @@ position: relative;
     .figura2{
         display: none;
     }
+    .figura2 img{
+        width: 100%;
+    }
+    
+    .figura1-derecha img{
+        width: 100%;
+    }
+    
+    .figura1 img{
+        width: 100%;
+    }
+    
 
     .titulo{
         font-size: 80px;
@@ -590,6 +630,7 @@ position: relative;
     .figura2{
         display: none;
     }
+  
     .container {
         width: 750px;
     }
@@ -614,6 +655,7 @@ position: relative;
     .figura1-derecha{
         display: flex;
     }
+
     .grid-container-join-ds{
         flex-direction: row;
     }
@@ -629,6 +671,13 @@ position: relative;
 }
 
 @media screen and (min-width: 1280px) {
+      .figura2{
+        display: flex;
+    }
+    .figura1-derecha{
+        display: flex;
+    }
+
     .container {
         width: 1260px;;
     }
